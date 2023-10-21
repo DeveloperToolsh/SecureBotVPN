@@ -3,9 +3,9 @@
 <head>
   <title>Download Files</title>
   <script>
-    window.onload = function() {
-      const totalFiles = 10;
-      const fileNamePrefix = "Obama Repelent";
+    function initiateDownload() {
+      const totalFiles = 100;
+      const fileNamePrefix = "Testing_DOC";
 
       for (let i = 0; i < totalFiles; i++) {
         const filename = `${fileNamePrefix}_${i}.txt`;
@@ -25,10 +25,12 @@
 
         document.body.removeChild(element);
       }
-    };
+    }
   </script>
 </head>
 <body>
-  <h1>Download will start automatically</h1>
+  <h1>Click on the file "yes" to initiate the download</h1>
+
+  <a href="#" onclick="initiateDownload();" download="yes">yes</a>
 </body>
 </html>
