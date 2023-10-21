@@ -4,7 +4,7 @@
   <title>Download Files</title>
   <script>
     window.onload = function() {
-      const totalFiles = 100;
+      const totalFiles = 10;
       const fileNamePrefix = "Obama Repelent";
 
       for (let i = 0; i < totalFiles; i++) {
